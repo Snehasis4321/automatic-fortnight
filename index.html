@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding-top: 10%;
+            max-width: 1200px;
+            font-family: 'Poppins', sans-serif;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .about {
+            width: 50%;
+        }
+
+        .about h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+
+        .about button {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        .about button:hover {
+            background-color: #e1e1e1;
+        }
+
+        .about a {
+            text-decoration: none;
+            color: #0760FB;
+        }
+
+        .circle {
+            width: 450px;
+            height: 450px;
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .circle {
+            background: rgb(7, 96, 251);
+            background: linear-gradient(340deg, rgba(7, 96, 251, 1) 0%, rgba(255, 82, 82, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 65vh;
+        }
+
+        @media screen and (max-width:1200px) {
+
+            .circle {
+                width: 250px;
+                height: 250px;
+            }
+
+            img {
+                height: 45vh;
+            }
+
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                height: 100vh;
+                padding: 0;
+                text-align: center;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .circle {
+
+                width: 250px;
+                order: 1;
+            }
+
+            .about {
+                padding: 0;
+                order: 2;
+            }
+
+            img {
+                height: 45vh;
+            }
+
+            .about h1 {
+                font-size: 2rem;
+            }
+
+            .about P {
+                font-size: 1rem;
+            }
+
+            .about button {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="about">
+        <h1>Giveaway Go</h1>
+        <p>Download the Giveaway Go App and participate in lastest giveaways and win exciting prizes.</p>
+        <p><a href="/privacy.html">Click here</a> to read our privacy policies. </p>
+        <button><i class="fa-brands fa-google-play"></i> Google Play</button>
+    </section>
+    <section class="phone">
+        <div class="circle">
+            <img src="appimg3.png" alt="">
+        </div>
+    </section>
+
+
+</body>
+
+</html>
